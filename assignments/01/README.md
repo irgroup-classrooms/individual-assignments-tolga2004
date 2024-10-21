@@ -10,3 +10,28 @@
    - Add a quote (about data science or sth. more general) that inspires you.
    - Add verbatim code. With a code snippet that is already familiar to you. Alternatively, write Python code that prints "Hello World!".
    - Add three other markdown-formatted contents. Also insert headings with appropriate levels.
+
+## To-do-Liste
+- [x] Lerne Git und GitHub
+- [ ] Verstehe Markdown-Syntax
+- [ ] Lerne Python-Basics
+
+## Tabelle
+| Markdown Element  | Syntax            |
+|-------------------|-------------------|
+| Überschrift 1      | `# Überschrift`   |
+| Fett               | `**fett**`        |
+| Link               | `[Linkname](URL)` |
+
+## Inspirierendes Zitat
+> "Data beats emotions."  
+> – Sean Rad
+
+## Python Code
+print("Hello World!")
+
+## Weitere Markdown-Inhalte
+![Markdown Logo](https://upload.wikimedia.org/wikipedia/commons/4/48/Markdown-mark.svg)
+[Besuche meine GitHub-Seite](https://github.com/tolga2004)
+**dieser Text ist fett**
+*dieser Text ist kursiv*
