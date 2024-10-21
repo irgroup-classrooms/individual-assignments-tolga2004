@@ -32,6 +32,9 @@ print("Hello World!")
 
 ## Weitere Markdown-Inhalte
 ![Markdown Logo](https://upload.wikimedia.org/wikipedia/commons/4/48/Markdown-mark.svg)
+
 [Besuche meine GitHub-Seite](https://github.com/tolga2004)
+
 **dieser Text ist fett**
+
 *dieser Text ist kursiv*
