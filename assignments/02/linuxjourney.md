@@ -5,6 +5,7 @@
 
 ## Solutions
 
+### Task 1
 ### Quiz 1
 - **Question**: What should be outputted to the display when you type `echo Hello World`?
 - **Answer**: `Hello World`
