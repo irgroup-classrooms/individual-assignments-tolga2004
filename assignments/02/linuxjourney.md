@@ -31,7 +31,7 @@
 
 ### Exercises
 - **Command**: `cd`
-  - **Output**: Takes you to your home directory, e.g., `/home/tolgaipek`
+  - **Output**: Takes you to your home directory, e.g., `/Users/tolgaipek`
 
 ---
  
@@ -199,3 +199,7 @@
 
 - **Exercises**: Exit out of the shell and see what happens.
   - **Command**: `exit` or `logout`
+
+### Task 2
+cd /Users/tolgaipek/Downloads/bashcrawl/entrance
+cat scroll
