@@ -202,4 +202,5 @@
 
 ### Task 2
 cd /Users/tolgaipek/Downloads/bashcrawl/entrance
+
 cat scroll
