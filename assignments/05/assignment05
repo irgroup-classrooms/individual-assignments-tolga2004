@@ -1,5 +1,4 @@
-1.
-Document and describe the fields
+# Aufgabe 2: Document and describe the fields
 columns_description = """
 ## Spaltenbeschreibung
 
@@ -10,6 +9,7 @@ columns_description = """
 """
 
 Transformationen für OpenRefine:
+```json
 [
   {
     "op": "core/text-transform",
@@ -89,3 +89,4 @@ Transformationen für OpenRefine:
     "description": "Rename column 'char' to 'character' for clarity"
   }
 ]
+```
