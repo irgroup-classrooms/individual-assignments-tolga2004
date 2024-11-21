@@ -1,4 +1,5 @@
-# Step 1: Document and describe the fields
+1.
+Document and describe the fields
 columns_description = """
 ## Spaltenbeschreibung
 
