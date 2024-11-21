@@ -1,0 +1,10 @@
+# Step 1: Document and describe the fields
+columns_description = """
+## Spaltenbeschreibung
+
+1. **ID**: Eine eindeutige Kennung für jede Zeile im Datensatz (Datentyp: int).
+2. **character**: Der Charakter im Film, der die jeweilige Zeile spricht (Datentyp: string).
+3. **dialog**: Der gesprochene Dialog, bereinigt von Sonderzeichen und Leerzeichen (Datentyp: string).
+4. **movie**: Der Film, aus dem die Dialogzeile stammt (Datentyp: string).
+"""
+
