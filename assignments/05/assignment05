@@ -8,8 +8,8 @@ columns_description = """
 4. **movie**: Der Film, aus dem die Dialogzeile stammt (Datentyp: string).
 """
 
+# Aufgabe 3
 Transformationen für OpenRefine:
-```json
 [
   {
     "op": "core/text-transform",
@@ -89,4 +89,35 @@ Transformationen für OpenRefine:
     "description": "Rename column 'char' to 'character' for clarity"
   }
 ]
-```
+
+# Aufgabe 5
+# 5.1: Zähle die Gesamtzeilenanzahl in der Datei
+$ wc -l < lotr-scripts_cleaned.csv
+2391
+
+# Extrahiere die Dialogspalte, teile die Wörter auf, filtere nach einzigartigen und zähle
+$ awk -F',' '{print $3}' lotr-scripts_cleaned.csv | tr ' ' '\n' | tr -d '[:punct:]' | sort | uniq | wc -l
+4059
+
+# 5.2: Extrahiere die Filmspalte, sortiere, zähle und zeige das Ergebnis
+$ awk -F',' '{print $4}' lotr-scripts_cleaned.csv | sort | uniq -c | sort -nr
+   1010 The Two Towers
+    873 The Return of the King
+    507 The Fellowship of the Ring
+      1 movie
+
+# 5.3: Extrahiere die Charakterspalte, sortiere, zähle die Vorkommen und zeige die Top 5
+$ cut -d',' -f2 lotr-scripts_cleaned.csv | sort | uniq -c | sort -nr | head -5
+    226 FRODO
+    217 SAM
+    205 GANDALF
+    187 ARAGORN
+    163 LEGOLAS
+
+# 5.4: Extrahiere Dialoge, teile Wörter auf, filtere Namen (Großbuchstaben zu Beginn), zähle und zeige die Top 5
+$ awk -F',' '{print $3}' lotr-scripts_cleaned.csv | tr ' ' '\n' | grep -oE '\b[A-Z][a-z]+\b' | sort | uniq -c | sort -nr | head -5
+    225 Frodo
+    220 Sam
+    180 Gandalf
+    161 Aragorn
+    148 Legolas
